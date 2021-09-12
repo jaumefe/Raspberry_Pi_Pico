@@ -9,7 +9,7 @@ typedef struct
 {
     float humidity;
     float temperature;
-}; DHT_reading;
+} DHT_reading;
 
 void readFromDHT(DHT_reading *measure);
 
