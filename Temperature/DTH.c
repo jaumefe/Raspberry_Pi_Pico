@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <math.h>
+#include "pico/stdlib.h"
+#include "hardware/gpio.h"
+
 #ifdef PICO_DEFAULT_LED_PIN
 #define LED_PIN PICO_DEFAULT_LED_PIN
 #endif
@@ -19,7 +24,7 @@ int main(){
     while(1){
         DHT_reading measure;
         readFromDHT(&measure);
-        printf("Humidity = %.1f%%, Temperature = %.1f%%\n", measure.humidity, measure.temperature)
+        printf("Humidity = %.1f%%, Temperature = %.1f%%\n", measure.humidity, measure.temperature);
         sleep_ms(2000);
     }
 }
