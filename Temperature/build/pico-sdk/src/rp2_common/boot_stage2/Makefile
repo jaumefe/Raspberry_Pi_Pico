@@ -155,14 +155,14 @@ bs2_default_padded_checksummed_asm/fast:
 	cd /home/pi/Raspberry_Pi_Pico/Temperature/build && $(MAKE) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build
 .PHONY : bs2_default_padded_checksummed_asm/fast
 
-compile_time_choice.o: compile_time_choice.S.o
+compile_time_choice.obj: compile_time_choice.S.obj
 
-.PHONY : compile_time_choice.o
+.PHONY : compile_time_choice.obj
 
 # target to build an object file
-compile_time_choice.S.o:
-	cd /home/pi/Raspberry_Pi_Pico/Temperature/build && $(MAKE) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.o
-.PHONY : compile_time_choice.S.o
+compile_time_choice.S.obj:
+	cd /home/pi/Raspberry_Pi_Pico/Temperature/build && $(MAKE) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj
+.PHONY : compile_time_choice.S.obj
 
 # Help Target
 help:
@@ -175,7 +175,7 @@ help:
 	@echo "... bs2_default_bin"
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... edit_cache"
-	@echo "... compile_time_choice.o"
+	@echo "... compile_time_choice.obj"
 .PHONY : help
 
 
