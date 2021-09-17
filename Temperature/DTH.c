@@ -24,7 +24,7 @@ int main(){
     while(1){
         DHT_reading measure;
         readFromDHT(&measure);
-        printf("Humidity = %.1f%%, Temperature = %.1f%%\n", measure.humidity, measure.temperature);
+        printf("Humidity = %.1f%%, Temperature = %.1fC\n", measure.humidity, measure.temperature);
         sleep_ms(2000);
     }
 }
