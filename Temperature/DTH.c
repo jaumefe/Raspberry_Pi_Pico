@@ -7,7 +7,7 @@
 #define LED_PIN PICO_DEFAULT_LED_PIN
 #endif
 
-const int DHT_PIN = 34;
+const int DHT_PIN = 28;
 const int MAX_TIMINGS = 85; //enviament màxim de trames (3 d'inici + 5 enviaments de 8 bits x 8 bits x 2 (Per duplicitat per enviar dades))
 
 typedef struct
